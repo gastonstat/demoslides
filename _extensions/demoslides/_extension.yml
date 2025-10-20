@@ -22,7 +22,7 @@ contributes:
       progress: false
       code-overflow: wrap
       title-slide-attributes:
-        data-background-image: stat20-hex-bg.png
+        data-background-image: stat198_slide.png
         data-background-size: contain
       include-after-body:
         - text: |
