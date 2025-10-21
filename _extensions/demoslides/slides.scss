@@ -1,3 +1,4 @@
+
 /*-- scss:defaults --*/
 
 // fonts
@@ -81,6 +82,34 @@ details>summary {
   padding: 6px 9px;
   max-height: 600px;
   white-space: pre;
+}
+
+// Turn to neighbor class - increases all text and code font sizes
+.ttan {
+  font-size: 1.1em !important;
+  
+  // Ensure code blocks also get larger font size
+  pre code,
+  .sourceCode code,
+  code {
+    font-size: 1.1em !important;
+  }
+  
+  // Make sure headings scale proportionally
+  h1, h2, h3, h4, h5, h6 {
+    font-size: 1.1em !important;
+  }
+  
+  // Scale callout boxes and other elements
+  .callout-tip,
+  .callout-note,
+  .callout-warning {
+    font-size: 1.1em !important;
+    
+    .callout-header {
+      font-size: 1.1em !important;
+    }
+  }
 }
 
 /*
@@ -250,3 +279,24 @@ div.meta-el {
   cursor: pointer;
 }
 
+.definition {
+  background-color: #fdf6e3; /* Light gold background */
+  border-radius: 12px;
+  padding: 0;
+  margin: 1rem 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.definition .definition-header {
+  background-color: #e6c28a; /* Darker gold banner */
+  color: #5d4037; /* Dark brown text for contrast */
+  font-weight: bold;
+  padding: 0.75rem 1rem;
+  margin: 0;
+  font-size: 1.1em;
+}
+
+.definition .definition-content {
+  padding: 1rem;
+}
